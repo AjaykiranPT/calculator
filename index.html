@@ -15,25 +15,25 @@
                 <input type=text id="displayValue" placeholder="0" readonly>
             </div>
             <div class="buttons">
-                <button class="item item1 clear"        onclick=displayValue.value="">AC</button>
-                <button class="item item1 delete"       onclick="deleteClick()">DE</button>
-                <button class="item item1 percentage"   onclick=displayValue.value +=".">.</button>
-                <button class="item item2 divide "      onclick=displayValue.value +="/">/</button>
-                <button class="item number seven"       onclick=displayValue.value +="7">7</button>
-                <button class="item numbver eight"      onclick=displayValue.value +="8">8</button>
-                <button class="item number nine"        onclick=displayValue.value +="9">9</button>
-                <button class="item item2 multi"        onclick=displayValue.value +="x">x</button>
-                <button class="item number four"        onclick=displayValue.value +="4">4</button>
-                <button class="item number five"        onclick=displayValue.value +="5">5</button>
-                <button class="item number six"         onclick=displayValue.value +="6">6</button>
-                <button class="item item2 minus"        onclick=displayValue.value +="-">-</button>
-                <button class="item number one"         onclick=displayValue.value +="1">1</button>
-                <button class="item number one"         onclick=displayValue.value +="2">2</button>
-                <button class="item number three"       onclick=displayValue.value +="3">3</button>
-                <button class="item item2 sum"          onclick=displayValue.value +="+">+</button>
-                <button class="item number dzero"       onclick=displayValue.value +="00">00</button>
-                <button class="item number zero"        onclick=displayValue.value +="0">0</button>
-                <button class="item equal"              onclick="equalClick()">=</button>
+                <button class="item item1 clear"        onclick="clearClicked()"> AC </button>
+                <button class="item item1 delete"       onclick="deleteClicked()"> DE </button>
+                <button class="item item1 percentage"   onclick="buttonClicked('.')"> . </button>
+                <button class="item item2 divide "      onclick="buttonClicked('/')"> / </button>
+                <button class="item number seven"       onclick="buttonClicked('7')"> 7 </button>
+                <button class="item numbver eight"      onclick="buttonClicked('8')"> 8 </button>
+                <button class="item number nine"        onclick="buttonClicked('9')"> 9 </button>
+                <button class="item item2 multi"        onclick="buttonClicked('*')"> x </button>
+                <button class="item number four"        onclick="buttonClicked('4')"> 4 </button>
+                <button class="item number five"        onclick="buttonClicked('5')"> 5 </button>
+                <button class="item number six"         onclick="buttonClicked('6')"> 6 </button>
+                <button class="item item2 minus"        onclick="buttonClicked('-')"> - </button>
+                <button class="item number one"         onclick="buttonClicked('1')"> 1 </button>
+                <button class="item number one"         onclick="buttonClicked('2')"> 2 </button>
+                <button class="item number three"       onclick="buttonClicked('3')"> 3 </button>
+                <button class="item item2 sum"          onclick="buttonClicked('+')"> + </button>
+                <button class="item number dzero"       onclick="buttonClicked('00')"> 00 </button>
+                <button class="item number zero"        onclick="buttonClicked('0')"> 0 </button>
+                <button class="item equal"              onclick="calculate('=')"> = </button>
             </div>
         </div>
         </center>
